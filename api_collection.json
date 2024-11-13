@@ -1,0 +1,151 @@
+{
+  "info": {
+    "name": "Cookr API",
+    "description": "Complete API collection for Cookr app",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Google Sign In",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/auth/google-signin",
+            "body": {
+              "mode": "raw",
+              "raw": {
+                "token": "google_token",
+                "platform": "android",
+                "userId": "google_user_id",
+                "name": "User Name",
+                "email": "user@email.com",
+                "profilePicture": "url"
+              }
+            }
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/auth/logout",
+            "headers": {
+              "Authorization": "Bearer {{token}}"
+            }
+          }
+        },
+        {
+          "name": "Get Current User",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/auth/user",
+            "headers": {
+              "Authorization": "Bearer {{token}}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Notes",
+      "item": [
+        {
+          "name": "Create Note",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/notes",
+            "headers": {
+              "Authorization": "Bearer {{token}}"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": {
+                "title": "Note Title",
+                "content": "Note Content"
+              }
+            }
+          }
+        },
+        {
+          "name": "Upload PDF Note",
+          "request": {
+            "method": "POST",
+            "url": "{{baseUrl}}/api/notes/ocr",
+            "headers": {
+              "Authorization": "Bearer {{token}}"
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/path/to/file.pdf"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get All Notes",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/notes",
+            "headers": {
+              "Authorization": "Bearer {{token}}"
+            }
+          }
+        },
+        {
+          "name": "Get Note by ID",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/notes/:id",
+            "headers": {
+              "Authorization": "Bearer {{token}}"
+            }
+          }
+        },
+        {
+          "name": "Update Note",
+          "request": {
+            "method": "PUT",
+            "url": "{{baseUrl}}/api/notes/:id",
+            "headers": {
+              "Authorization": "Bearer {{token}}"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": {
+                "title": "Updated Title",
+                "content": "Updated Content"
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete Note",
+          "request": {
+            "method": "DELETE",
+            "url": "{{baseUrl}}/api/notes/:id",
+            "headers": {
+              "Authorization": "Bearer {{token}}"
+            }
+          }
+        },
+        {
+          "name": "Search Notes",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/notes/search?query=searchterm",
+            "headers": {
+              "Authorization": "Bearer {{token}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
