@@ -2,7 +2,7 @@
 
 <span style="color: #FF6600; font-weight: bold;">This software and its source code are confidential and proprietary to Cookr.co</span>
 
-<span style="background-color: #FFFF00; color: #000000;">No part of this software, its code, or any associated documentation may be viewed, reproduced, distributed, sold, or used in any manner whatsoever without explicit written permission from Yuvraj Singh Jammu.</span>
+<span style="background-color: #FFFF00; color: #000000;">No part of this software, its code, or any associated documentation may be viewed, reproduced, distributed, sold, or used in any manner whatsoever without explicit permission from Yuvraj Singh Jammu.</span>
 
 <span style="color: #0000FF;">No individual or entity is permitted to possess, hold, or store this software or its source code without prior authorization. Unauthorized access, possession, reproduction, modification, or distribution of this software is strictly prohibited and constitutes a violation of this agreement.</span>
 
