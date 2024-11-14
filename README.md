@@ -10,4 +10,4 @@
 
 <span style="color: #FF0000; font-size: 20px; font-weight: bold;">Violation of this agreement will result in legal action to the fullest extent permitted by Swiss law.</span>
 
-(this means i'll sue your gayass if i catch you stealing my source code)
+(this means i'll sue your gayass whoever ur if i catch you stealing my source code)
